@@ -1,0 +1,965 @@
+.ham8 .top {
+  stroke-dasharray: 40 160;
+}
+
+.ham8 .middle {
+  stroke-dasharray: 40 142;
+  -webkit-transform-origin: 50%;
+          transform-origin: 50%;
+  -webkit-transition: -webkit-transform 400ms;
+  transition: -webkit-transform 400ms;
+  transition: transform 400ms;
+  transition: transform 400ms, -webkit-transform 400ms;
+}
+
+.ham8 .bottom {
+  stroke-dasharray: 40 85;
+  -webkit-transform-origin: 50%;
+          transform-origin: 50%;
+  -webkit-transition: stroke-dashoffset 400ms, -webkit-transform 400ms;
+  transition: stroke-dashoffset 400ms, -webkit-transform 400ms;
+  transition: transform 400ms, stroke-dashoffset 400ms;
+  transition: transform 400ms, stroke-dashoffset 400ms, -webkit-transform 400ms;
+}
+
+.ham8.active .top {
+  stroke-dashoffset: -64px;
+}
+
+.ham8.active .middle {
+  stroke-dashoffset: -20px;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.ham8.active .bottom {
+  stroke-dashoffset: -64px;
+}
+
+.ham {
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-transition: -webkit-transform 400ms;
+  transition: -webkit-transform 400ms;
+  transition: transform 400ms;
+  transition: transform 400ms, -webkit-transform 400ms;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  z-index: 20;
+}
+
+.hamRotate.active {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.hamRotate180.active {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.line {
+  fill: none;
+  -webkit-transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
+  transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
+  stroke: white;
+  stroke-width: 5.5;
+  stroke-linecap: round;
+}
+
+.ham6 .top {
+  stroke-dasharray: 40 172;
+}
+
+.ham6 .middle {
+  stroke-dasharray: 40 111;
+}
+
+.ham6 .bottom {
+  stroke-dasharray: 40 172;
+}
+
+.ham6.active .top {
+  stroke-dashoffset: -132px;
+}
+
+.ham6.active .middle {
+  stroke-dashoffset: -71px;
+}
+
+.ham6.active .bottom {
+  stroke-dashoffset: -132px;
+}
+
+.navigation {
+  top: 0;
+  width: 100%;
+}
+
+.navlist {
+  position: absolute;
+  top: 0;
+  background-color: black;
+  height: 80vh;
+  width: 100%;
+  left: -700px;
+  text-align: center;
+  padding-left: 0;
+  padding-top: 56px;
+  -webkit-transition: .7s ease-in-out;
+  transition: .7s ease-in-out;
+  opacity: 0;
+}
+
+.navlist li {
+  margin: auto;
+  width: 50%;
+  margin-bottom: 30px;
+  list-style-type: none;
+}
+
+.navlist li a {
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+}
+
+header {
+  position: absolute;
+  z-index: 1111;
+  width: 100%;
+  top: 0;
+}
+
+header .flexed .logo {
+  float: right;
+  margin-right: 15px;
+  margin-top: 15px;
+}
+
+header .flexed .logo img {
+  width: 167px;
+}
+
+.open {
+  left: 0;
+  opacity: 1;
+  position: absolute;
+}
+
+.hero {
+  z-index: -11;
+}
+
+.hero h1 {
+  position: absolute;
+  top: 36%;
+  left: 14%;
+  text-align: center;
+  color: white;
+  z-index: 111;
+}
+
+.hero img {
+  width: 100%;
+  height: 95vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 34%;
+     object-position: 34%;
+}
+
+.hero .overlay {
+  background-color: rgba(0, 0, 0, 0.555);
+  width: 100%;
+  position: absolute;
+  top: 0;
+  height: 95vh;
+}
+
+h4 {
+  text-align: center;
+}
+
+h2 {
+  margin-top: 30px;
+}
+
+.management_p {
+  margin-top: 100px;
+}
+
+.management_p p {
+  color: #948F8F;
+  white-space: pre-line;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.management_p hr {
+  background-color: #948F8F;
+  height: 2px;
+  opacity: 1;
+}
+
+.management_p2 {
+  margin-top: 100px;
+}
+
+.management_p2 p {
+  color: #948F8F;
+  white-space: pre-line;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.management_p2 hr {
+  background-color: #948F8F;
+  height: 2px;
+  opacity: 1;
+}
+
+.management_p button {
+  margin: auto;
+  float: right;
+}
+
+.management_p3 button {
+  margin: auto;
+  float: right;
+  -o-object-position: center;
+  object-position: center;
+  padding: 13px 40px;
+  font-size: 20px;
+  font-weight: bold;
+  float: right;
+  margin-top: 30px;
+}
+
+.management_p5 button {
+  margin: auto;
+  float: right;
+  -o-object-position: center;
+  object-position: center;
+  padding: 13px 40px;
+  font-size: 20px;
+  font-weight: bold;
+  float: right;
+  margin-top: 30px;
+}
+
+.contact-section button {
+  margin: auto;
+  float: right;
+  -o-object-position: center;
+  object-position: center;
+  padding: 13px 40px;
+  font-size: 20px;
+  font-weight: bold;
+  float: right;
+  margin-top: 30px;
+}
+
+.management_p3 {
+  margin-top: 180px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.management_p3 p {
+  color: #948F8F;
+  white-space: pre-line;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.management_p3 hr {
+  background-color: #948F8F;
+  height: 2px;
+  opacity: 1;
+}
+
+.entertainment hr {
+  height: 2px;
+  background-color: #948F8F;
+  opacity: 1;
+}
+
+.entertainment .member {
+  position: relative;
+  height: 266px;
+  margin-bottom: 10px;
+}
+
+.entertainment .member img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.entertainment .overlay_2 {
+  background-color: rgba(0, 0, 0, 0.664);
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.entertainment .overlay_2 h4, .entertainment .overlay_2 p {
+  color: white;
+}
+
+.entertainment .overlay_2 h4 {
+  text-align: left;
+  padding-bottom: 0;
+  font-size: 20px;
+  margin-left: 5px;
+}
+
+.entertainment .overlay_2 p {
+  text-align: right;
+  margin-right: 10px;
+}
+
+.entertainment .overlay_2 hr {
+  background: white;
+  height: 2px;
+  opacity: 1;
+  margin: 4px 0 4px 0;
+}
+
+.sport .member {
+  position: relative;
+  height: 266px;
+  margin-bottom: 10px;
+}
+
+.sport .member img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.sport .member h4 {
+  margin-left: 10px;
+}
+
+.sport .member .overlay_2 p {
+  margin-right: 10px;
+}
+
+.sport .overlay_2 {
+  background-color: rgba(0, 0, 0, 0.664);
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.sport .overlay_2 h4, .sport .overlay_2 p {
+  color: white;
+}
+
+.sport .overlay_2 h4 {
+  text-align: left;
+  padding-bottom: 0;
+  font-size: 20px;
+}
+
+.sport .overlay_2 p {
+  text-align: right;
+}
+
+.sport .overlay_2 hr {
+  background: white;
+  height: 2px;
+  opacity: 1;
+  margin: 4px 0 4px 0;
+}
+
+.brands #fox {
+  width: 140px;
+}
+
+.brands #roma {
+  width: 68px;
+  margin-top: 30px;
+}
+
+.brands #maur {
+  width: 92px;
+}
+
+.brands #nike {
+  width: 103px;
+  margin-top: 23px;
+}
+
+.brands #jeep {
+  width: 100px;
+  margin-top: 60px;
+}
+
+.brands #interscope {
+  width: 67px;
+}
+
+footer {
+  background-color: black;
+  text-align: center;
+  margin-top: 30px;
+}
+
+footer img {
+  width: 154px;
+}
+
+footer ul {
+  padding-left: 0;
+  padding-bottom: 15px;
+  margin-bottom: 0;
+}
+
+footer ul li {
+  list-style-type: none;
+}
+
+footer ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 21px;
+}
+
+table {
+  width: 100%;
+}
+
+table td {
+  font-size: 20px;
+  font-weight: 700;
+  color: #948F8F;
+}
+
+#address {
+  background-color: #FAFAFA;
+  padding-top: 50px;
+  padding-bottom: 70px;
+  margin-top: 200px;
+}
+
+.contact-section {
+  margin-top: 180px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.contact-section p {
+  font-size: 20px;
+  font-weight: 700;
+  color: #948F8F;
+}
+
+.contact-section hr {
+  background-color: #948F8F;
+  height: 2px;
+  opacity: 1;
+}
+
+form input {
+  border: none;
+  border-bottom: 3px solid black;
+}
+
+form {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+}
+
+form label {
+  width: 100px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+form input {
+  width: 36%;
+  border: none;
+  border-bottom: 3px solid #948F8F;
+  margin-bottom: 56px;
+  margin-left: 52px;
+  background: none;
+}
+
+form textarea {
+  width: 36%;
+  height: 100px;
+  border: none;
+  border-bottom: 3px solid black;
+  margin-left: 52px;
+  background: none;
+}
+
+.email-section {
+  position: relative;
+  margin-top: 70px;
+  padding-top: 40px;
+}
+
+.section-bg {
+  position: absolute;
+  top: 0;
+  width: 75%;
+  left: 10%;
+}
+
+.textarea {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+button {
+  background-color: black;
+  color: white;
+  border: none;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+#about {
+  left: 30%;
+}
+
+#services {
+  left: 40%;
+}
+
+#story {
+  white-space: pre-line;
+  font-size: 20px;
+  left: 3%;
+}
+
+#contact {
+  left: 39%;
+}
+
+.management_p button {
+  -o-object-position: center;
+     object-position: center;
+}
+
+.management_p4 {
+  margin-top: 180px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.management_p4 p {
+  color: #948F8F;
+  white-space: pre-line;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.management_p4 hr {
+  background-color: #948F8F;
+  height: 2px;
+  opacity: 1;
+}
+
+.email-section {
+  margin-top: 180px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.email-section p {
+  color: #948F8F;
+  white-space: pre-line;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.email-section hr {
+  background-color: #948F8F;
+  height: 2px;
+  opacity: 1;
+}
+
+.management_p5 {
+  margin-top: 180px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.management_p5 p {
+  color: #948F8F;
+  white-space: pre-line;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.management_p5 hr {
+  background-color: #948F8F;
+  height: 2px;
+  opacity: 1;
+}
+
+@media (max-width: 414px) {
+  p {
+    font-weight: 500 !important;
+  }
+  table td {
+    font-weight: 500;
+  }
+  .textarea {
+    margin-bottom: 20px;
+  }
+  form {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+  }
+  form a {
+    background-color: black;
+    color: white;
+    padding: 8px 15px;
+    margin-bottom: 20px;
+  }
+  #address {
+    margin-top: 0px;
+  }
+  .management_p {
+    margin-top: 30px;
+  }
+}
+
+@media (min-width: 540px) {
+  .ham {
+    width: 92px;
+  }
+  .navlist {
+    top: -600px;
+    left: 0;
+  }
+  .open {
+    top: 0;
+  }
+  .hero h1 {
+    left: 23%;
+  }
+  #about {
+    left: 34%;
+  }
+  #story {
+    white-space: pre-line;
+    font-size: 24px;
+    left: 8%;
+  }
+  footer ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  footer ul li {
+    margin: 10px;
+  }
+}
+
+@media (min-width: 768px) {
+  .ham {
+    width: 111px;
+  }
+  .navlist {
+    z-index: -2;
+  }
+  header .flexed .logo img {
+    width: 257px;
+  }
+  .hero h1 {
+    left: 19%;
+    font-size: 48px;
+  }
+  .navlist li a {
+    font-size: 38px;
+    color: white;
+    text-decoration: none;
+  }
+  .entertainment .member {
+    height: 194px;
+  }
+  .sport .member {
+    height: 194px;
+  }
+  #story {
+    font-size: 33px;
+  }
+  form a {
+    background-color: black;
+    color: white;
+    float: right;
+    margin-right: 189px;
+    text-decoration: none;
+  }
+  .management_p button {
+    -o-object-position: center;
+    object-position: center;
+    padding: 13px 40px;
+    font-size: 20px;
+    font-weight: bold;
+    float: right;
+    margin-top: 30px;
+  }
+  form a {
+    background-color: black;
+    color: white;
+    float: right;
+    margin-right: 189px;
+    padding: 8px 20px;
+    margin-top: 20px;
+  }
+  footer {
+    margin-top: 120px;
+  }
+  footer ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  footer ul li {
+    margin: 20px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .hero h1 {
+    font-size: 61px;
+  }
+  h4 {
+    text-align: left;
+    font-size: 32px;
+  }
+  .entertainment .member {
+    height: 246px;
+  }
+  .sport .member {
+    height: 247px;
+  }
+  .entertainment .overlay_2 h4 {
+    font-size: 21px;
+  }
+  .sport .overlay_2 h4 {
+    font-size: 21px;
+  }
+  footer {
+    padding: 20px 0 40px 0;
+  }
+  footer ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  footer ul li {
+    margin: 20px;
+  }
+  #story {
+    font-size: 45px;
+    text-align: initial;
+  }
+}
+
+@media (min-width: 1280px) {
+  p {
+    font-size: 23px !important;
+    white-space: pre-line;
+  }
+  .navlist {
+    height: 97vh;
+  }
+  h2 {
+    font-size: 2.89rem;
+    font-weight: 700;
+  }
+  .banner {
+    height: 90vh;
+  }
+  .banner img {
+    height: 90vh;
+  }
+  .banner .overlay {
+    height: 90vh;
+  }
+  .entertainment .overlay_2 h4 {
+    margin-left: 0px;
+  }
+  .sport .member h4 {
+    margin-left: 0px;
+  }
+  #img {
+    position: absolute;
+    top: 0;
+    z-index: -1;
+  }
+  .hero h1 {
+    left: 10% !important;
+    font-size: 59px;
+    font-weight: 400;
+    color: white;
+    padding-left: 280px;
+  }
+  form a {
+    padding: 8px 25px;
+    margin-right: 250px;
+    margin-top: 25px;
+  }
+  footer {
+    margin-top: 210px;
+  }
+  .management_p {
+    margin-top: 968px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  form label {
+    width: 100px;
+    font-size: 25px;
+    font-weight: 700;
+  }
+  .entertainment, .sport, .brands {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 200px;
+  }
+  .entertainment hr, .sport hr, .brands hr {
+    height: 2px;
+    background: #948F8F;
+    opacity: 1;
+  }
+  #diff {
+    margin-top: 0;
+    position: relative;
+  }
+  .overlay_2 {
+    padding: 8px;
+  }
+  .brands {
+    margin-bottom: 100px;
+  }
+  #services {
+    left: 42%;
+  }
+  .entertainment .member {
+    height: 294px;
+  }
+  .sport .member {
+    height: 294px;
+  }
+  .entertainment .overlay_2 h4 {
+    font-size: 25px;
+  }
+  .sport .overlay_2 h4 {
+    font-size: 25px;
+  }
+  #story {
+    font-size: 53px;
+    top: 32%;
+  }
+  #story {
+    left: 0% !important;
+  }
+  .brands #fox {
+    width: 224px;
+  }
+  .brands #roma {
+    width: 106px;
+    margin-top: 47px;
+  }
+  .brands #maur {
+    width: 161px;
+    margin-top: 48px;
+  }
+  .brands #nike {
+    width: 205px;
+    margin-top: 59px;
+  }
+  .brands #jeep {
+    width: 165px;
+    margin-top: 48px;
+  }
+  .brands #interscope {
+    width: 94px;
+    margin-top: 20px;
+  }
+  footer img {
+    width: 357px;
+  }
+  footer hr {
+    height: 3.5px !important;
+    opacity: 1;
+    background-color: white;
+    width: 90%;
+    margin: 25px auto;
+  }
+  footer ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 26px;
+  }
+  footer {
+    padding: 20px 0 0px 0;
+  }
+}
+
+@media (min-width: 1440px) {
+  .hero h1 {
+    left: 0% !important;
+    font-size: 59px;
+    font-weight: 400;
+    color: white;
+    padding-left: 280px;
+    left: 20% !important;
+  }
+  form a {
+    padding: 12px 41px;
+    margin-right: 295px;
+    margin-top: 25px;
+    font-size: 28px;
+  }
+  #story {
+    font-size: 53px;
+    top: 31%;
+  }
+  #contact h1 {
+    left: 7% !important;
+    font-size: 59px;
+    font-weight: 400;
+    color: white;
+    padding-left: 280px;
+    left: 27% !important;
+  }
+}
+/*# sourceMappingURL=style.css.map */
